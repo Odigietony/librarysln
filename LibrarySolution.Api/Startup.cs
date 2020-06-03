@@ -12,6 +12,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using LibrarySolution.Api.Data.Interfaces;
+using LibrarySolution.Api.Repository;
 
 namespace LibrarySolution.Api
 {
@@ -30,6 +32,8 @@ namespace LibrarySolution.Api
             services.AddControllers();
             services.AddDbContext<DataContext>(mysql => 
             mysql.UseMySql(Configuration["MySqlConnection:ConnectionString"]));
+
+            services.AddScoped<IBookRepository, BookRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
