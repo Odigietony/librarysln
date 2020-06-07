@@ -11,8 +11,7 @@ namespace LibrarySolution.Api.Models
     public class Book
     {
         [Key] 
-        public int Id { get; set; }
-        [MaxLength(13)]
+        public int Id { get; set; } 
         public string Isbn { get; set; }
         public string BookTitle { get; set; }
         public string BookDescription { get; set; }
