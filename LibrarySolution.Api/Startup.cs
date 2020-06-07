@@ -34,6 +34,7 @@ namespace LibrarySolution.Api
             mysql.UseMySql(Configuration["MySqlConnection:ConnectionString"]));
 
             services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

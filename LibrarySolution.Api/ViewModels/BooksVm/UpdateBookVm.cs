@@ -1,4 +1,4 @@
-namespace LibrarySolution.Api.ViewModels
+namespace LibrarySolution.Api.ViewModels.BooksVm
 {
     public class UpdateBookVm : CreateBookVm
     {

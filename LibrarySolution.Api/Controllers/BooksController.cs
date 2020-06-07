@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using LibrarySolution.Api.Data.Interfaces;
 using LibrarySolution.Api.Models;
-using LibrarySolution.Api.ViewModels;
+using LibrarySolution.Api.ViewModels.BooksVm;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LibrarySolution.Api.Controllers

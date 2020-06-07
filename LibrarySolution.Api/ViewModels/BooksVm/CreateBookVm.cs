@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace LibrarySolution.Api.ViewModels
+namespace LibrarySolution.Api.ViewModels.BooksVm
 {
     public class CreateBookVm
     { 

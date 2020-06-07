@@ -14,6 +14,7 @@ namespace LibrarySolution.Api.Data
 
         }
 
+        public DbSet<Authors> Authors { get; set; }
         public DbSet<Book> Books { get; set; }
     }
 }
